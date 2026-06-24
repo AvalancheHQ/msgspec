@@ -97,7 +97,7 @@ jobs:
         run: uv run --no-sync pytest tests/prof/perf --codspeed --randomly-seed="$RANDOMLY_SEED" -k arm
         upload-url: ${{ secrets.CODSPEED_STAGING_UPLOAD_URL }}
         # https://github.com/CodSpeedHQ/codspeed/releases/tag/v4.16.1
-        runner-version: v4.16.1
+        runner-version: rev:ae00939db0524427812966c6e3ed6db49ca36bdc
 
   memory_benchmarks:
     if: false
