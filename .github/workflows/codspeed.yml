@@ -84,7 +84,8 @@ jobs:
         cmake --build "$CS_SRC/build" -j"$(nproc)"
         cmake --install "$CS_SRC/build"
 
-        # configure is checked in; only64bit skips the no-Capstone 32-bit build.
+        # only64bit skips the no-Capstone 32-bit secondary build.
+        ./autogen.sh
         ./configure --enable-only64bit
         make -j$(nproc)
         sudo make install
