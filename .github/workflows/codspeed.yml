@@ -62,7 +62,7 @@ jobs:
       with:
         mode: simulation
         run: uv run --no-sync pytest tests/prof/perf --codspeed --randomly-seed="$RANDOMLY_SEED" -k arm
-        upload-url: ${{ secrets.CODSPEED_MATTHIAS_DEV_UPLOAD_URL }}
+        upload-url: ${{ secrets.CODSPEED_STAGING_UPLOAD_URL }}
 
   memory_benchmarks:
     if: false
