@@ -33,7 +33,7 @@ env:
 jobs:
   perf_benchmarks:
     name: performance benchmarks
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04-arm
     # runs-on: codspeed-macro
     permissions:
       contents: read
