@@ -65,7 +65,7 @@ jobs:
         sudo apt-get install -y build-essential automake autoconf cmake libc6-dev
         git clone --recurse-submodules https://github.com/CodSpeedHQ/valgrind-codspeed
         cd valgrind-codspeed
-        git checkout cod-2985-flamegraph-regression-for-msgspec-benchmarks-with-recursion
+        git checkout cod-2985-arm64-unwind-minpops
         git submodule update --init --recursive
 
         # Build the static Capstone that Callgrind cycle estimation links
